@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.vite/
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
+
+# Local visual verification and redundant full-size source photographs.
+qa/
+output/destination-photos/

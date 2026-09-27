@@ -1,0 +1,196 @@
+/* Mobile corrections verified against the live homepage. */
+.hero-art--mobile {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .menu-toggle,
+  .phone-cta {
+    min-height: 44px;
+  }
+
+  .menu-toggle {
+    min-width: 44px;
+  }
+
+  .search-field input,
+  .search-field select,
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 16px;
+  }
+
+  .contact-form input {
+    min-height: 48px;
+  }
+
+  .modal-close {
+    width: 44px;
+    height: 44px;
+    top: 10px;
+    right: 10px;
+  }
+
+  dialog > .eyebrow {
+    padding-right: 28px;
+  }
+
+  .service-body {
+    padding-bottom: 66px;
+  }
+
+  .service-body > .round-arrow {
+    width: 44px;
+    height: 44px;
+  }
+
+  .search-submit {
+    min-width: 0;
+    width: 100%;
+    min-height: 48px;
+    justify-self: stretch;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: clamp(44px, 14.5vw, 58px);
+  }
+
+  .hero h1 > span {
+    white-space: nowrap;
+  }
+
+  .hero-actions .button {
+    min-height: 44px;
+  }
+
+  /* Keep the picture in the content flow so wrapped text never overlaps it. */
+  .hero > .hero-art {
+    display: none;
+  }
+
+  .hero-art--mobile {
+    display: block;
+    position: relative;
+    inset: auto;
+    width: calc(100% + 36px);
+    height: 225px;
+    margin: 16px -18px 14px;
+  }
+
+  .hero-services {
+    padding-top: 0;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px 10px;
+    margin-bottom: 24px;
+  }
+
+  .hero-services > a {
+    font-size: 12px;
+    line-height: 1.35;
+    gap: 8px;
+  }
+
+  .hero-services .icon-medallion {
+    width: 46px;
+    height: 46px;
+  }
+
+  .hero-services .icon-medallion svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .search-tabs {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    overflow: visible;
+  }
+
+  .search-tabs button,
+  .search-tabs button:first-child {
+    min-height: 48px;
+    padding: 8px;
+    font-size: 12px;
+    line-height: 1.3;
+    white-space: normal;
+    justify-content: center;
+  }
+
+  .search-fields,
+  .search-fields.no-origin {
+    grid-template-columns: minmax(0, 1fr) 44px;
+    gap: 10px;
+  }
+
+  .search-fields .search-field:nth-of-type(n),
+  .search-fields.no-origin .search-field:nth-of-type(n) {
+    grid-column: 1 / -1;
+    height: 76px;
+    padding: 10px 12px;
+    gap: 10px;
+  }
+
+  .search-field > span {
+    font-size: 12px;
+  }
+
+  .search-field input,
+  .search-field select {
+    height: 34px;
+  }
+
+  .search-fields:not(.no-origin) .search-field:nth-of-type(1) {
+    grid-row: 1;
+    padding-right: 58px;
+  }
+
+  .search-fields:not(.no-origin) .search-field:nth-of-type(2) {
+    grid-row: 2;
+    padding-right: 58px;
+  }
+
+  .swap {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    align-self: center;
+    justify-self: center;
+    z-index: 1;
+    width: 44px;
+    height: 44px;
+    transform: rotate(90deg);
+  }
+
+  .search-submit {
+    grid-column: 1 / -1;
+    font-size: 15px;
+  }
+
+  .destination-controls {
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .destination-controls .round-arrow,
+  .testimonials-motion .reviews-wrapper > .round-arrow,
+  .carousel-playback {
+    width: 44px;
+    height: 44px;
+  }
+
+  .destination-dots {
+    order: 2;
+    flex-basis: 100%;
+    justify-content: center;
+  }
+
+  .destination-controls .dot {
+    width: 32px;
+    height: 44px;
+  }
+
+  .testimonials-motion .review-dots .dot {
+    width: 36px;
+  }
+}
