@@ -31,4 +31,12 @@ Les tarifs sont indicatifs, issus de la maquette. Trois témoignages reprennent 
 
 Voir `design-qa.md` pour le journal de vérification. Les captures et le rapport illustré dans `qa/` restent des artefacts locaux, exclus du dépôt. Contrôles responsive de 320 à 1440px, dont les menus, les carrousels et les validations de formulaire ; sans téléphone physique ni envoi de messages.
 
-La compilation prépare aussi `dist/server/index.js` et `dist/.openai/hosting.json`. La publication du dépôt GitHub ne déploie pas automatiquement le site.
+La compilation prépare aussi `dist/server/index.js` et `dist/.openai/hosting.json`. Le projet Vercel relié au dépôt publie `dist/client`, comme indiqué dans `vercel.json`.
+
+## Aperçu de partage
+
+Adresse publique : https://united-website-ten.vercel.app/
+
+Le titre, la description, les balises Open Graph et Twitter sont dans le HTML initial (`index.html`), accessibles aux robots de prévisualisation sans JavaScript. L’image `public/assets/united-events-share.jpg` est un export JPEG de 1200 × 675px du hero, conservant sa composition complète.
+
+En cas de changement de domaine, mettre à jour ensemble le lien canonical, `og:url` et les URLs absolues de l’image dans `index.html`. La configuration Vercel publie directement `dist/client` à la racine, afin que la page et l’image soient accessibles publiquement.
